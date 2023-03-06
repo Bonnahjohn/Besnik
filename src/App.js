@@ -249,8 +249,8 @@ function App() {
             pleasure and praising pain was born and I will give you a complete
             account of the system
           </p>
-          <div className="grid md:grid-cols-2 lg:gap-x-16 lg:gap-y-20 gap-16 lg:gap-0 grid-cols-1 mt-16">
-            <div className="lg:order-1 order-3 shadow-xl w-[95%] rounded-b-3xl">
+          <div className="grid md:grid-cols-2 lg:gap-x-28 lg:gap-y-20 gap-16 lg:gap-0 grid-cols-1 mt-16">
+            <div className="lg:order-1 order-3 shadow-xl  rounded-b-3xl">
               <img
                 src={recipe1}
                 alt="recipies food"
@@ -263,7 +263,7 @@ function App() {
                 <p className="text-xl text-orange-500">$9.10</p>
               </div>
             </div>
-            <div className="lg:order-2 order-4 shadow-xl w-[95%] rounded-b-3xl">
+            <div className="lg:order-2 order-4 shadow-xl  rounded-b-3xl">
               <img
                 src={recipe2}
                 alt="recipies food"
@@ -274,7 +274,7 @@ function App() {
                 <p className="text-xl text-orange-500">$8.99</p>
               </div>
             </div>
-            <div className=" lg:order-3 order-1 shadow-xl w-[95%] rounded-b-3xl">
+            <div className=" lg:order-3 order-1 shadow-xl  rounded-b-3xl">
               <img
                 src={recipe3}
                 alt="recipies food"
@@ -285,7 +285,7 @@ function App() {
                 <p className="text-xl text-orange-500">$7.00</p>
               </div>
             </div>
-            <div className=" lg:order-4 order-2 shadow-xl w-[95%] rounded-b-3xl">
+            <div className=" lg:order-4 order-2 shadow-xl  rounded-b-3xl">
               <img
                 src={recipe4}
                 alt="recipies food"
@@ -297,6 +297,52 @@ function App() {
                 </h5>
                 <p className="text-xl text-orange-500">$5.50</p>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="mt-40 mb-32">
+          <div className="flex justify-between">
+            <div>
+              {" "}
+              <h5 className="text-4xl font-semibold mb-10 hidden md:block">
+                Which is what our popular <br /> customers are saying
+              </h5>
+              {/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm small screens only mmmmmmmmmmmmmmmmmmm*/}
+              <h5 className="text-4xl font-semibold mb-10 md:hidden block">
+                Which is what our popular customers are saying
+              </h5>
+              <p className="text-stone-500 leading-8 text-xl md:block hidden">
+                {" "}
+                But I must explain to you how all this mistaken idea of <br />{" "}
+                denouncing pleasure and praising pain was born.
+              </p>
+              {/* small screens only */}
+              <p className="text-stone-500 leading-8 text-xl md:hidden block">
+                {" "}
+                But I must explain to you how all this mistaken idea of{" "}
+                denouncing pleasure and praising pain was born.
+              </p>
+            </div>
+            <div className="mt-32 space-x-8 md:block hidden">
+              {" "}
+              <button
+                type="button"
+                className="w-10 h-10 rounded-full ring-1 ring-orange-500"
+              >
+                <span className="text-orange-500 text-xl">
+                  {" "}
+                  <ion-icon name="arrow-back-outline"></ion-icon>
+                </span>
+              </button>
+              <button
+                type="button"
+                className="w-10 h-10 rounded-full ring-1 ring-orange-500"
+              >
+                <span className="text-orange-500 text-xl">
+                  {" "}
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </span>
+              </button>
             </div>
           </div>
         </section>
