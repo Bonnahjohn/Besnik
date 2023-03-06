@@ -36,12 +36,22 @@ function App() {
                   Full view menu
                 </button>
               </div>
-              <div className="mt-2 text-xl lg:-ml-6 ">
-                <span>k</span>
-                <span>k</span>
-                <span>k</span>
-                <span>k</span>
-                <span>k</span>
+              <div className="mt-2 text-xl lg:-ml-6 space-x-2">
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star-outline"></ion-icon>
+                </span>
               </div>
             </div>
           </div>
@@ -169,7 +179,11 @@ function App() {
         {/*mmmmmmmmmmmmmmmmmmmmmmmmmmmm   always the best setion mmmmmmmmmmmmmmmmmmm*/}
         <section className="grid lg:grid-cols-2 grid-cols-1 gap-20 mt-40">
           <div className=" lg:order-1 order-2">
-            <img src={eat} alt="" className="w-full h-[80vh] rounded-3xl" />
+            <img
+              src={eat}
+              alt=""
+              className="w-full h-[80vh] rounded-[1.5rem]"
+            />
           </div>
           <div className=" mt-16 lg:order-2 order-1">
             <h4 className="md:text-4xl text-3xl font-semibold mb-10">
@@ -195,7 +209,28 @@ function App() {
             >
               ORDER NOW
             </button>
-            <div className="flex justify-between mt-20"></div>
+
+            <div className="flex  space-x-6 mt-20">
+              {" "}
+              <button
+                type="button"
+                className="w-10 h-10 rounded-full ring-1 ring-orange-500"
+              >
+                <span className="text-orange-500 text-xl">
+                  {" "}
+                  <ion-icon name="arrow-back-outline"></ion-icon>
+                </span>
+              </button>
+              <button
+                type="button"
+                className="w-10 h-10 rounded-full ring-1 ring-orange-500"
+              >
+                <span className="text-orange-500 text-xl">
+                  {" "}
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </span>
+              </button>
+            </div>
           </div>
         </section>
         {/*mmmmmmmmmmmmmmmmmmmmmmmmmmmm   Our special recipies setion mmmmmmmmmmmmmmmmmmm*/}
