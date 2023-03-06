@@ -45,7 +45,13 @@ const Nav = () => {
         {/* main items  on the nav */}
         <div className="container mx-auto justify-between flex  lg:px-16 px-5 ">
           <div>
-            <span className="font-bold text-black text-2xl">Besnik.</span>
+            <span
+              className={`font-bold text-black text-2xl  ${
+                scroller ? "text-white text-3xl" : ""
+              }`}
+            >
+              Besnik.
+            </span>
           </div>
           <ul
             className={` flex lg:flex-row flex-col  lg:space-x-10 
@@ -56,7 +62,9 @@ const Nav = () => {
           isActive
             ? "translate-x-0 delay-[1ms]"
             : " translate-x-[100%] delay-[1ms] "
-        } lg:translate-x-0  justify-center text-center`}
+        } lg:translate-x-0  justify-center text-center ${
+              scroller ? "text-white" : "text-gray-400"
+            }`}
           >
             {links.map((link) => (
               <li key={link.id}>
