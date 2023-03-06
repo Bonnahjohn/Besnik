@@ -13,21 +13,41 @@ const Nav = () => {
   const handleToggler = () => {
     setIsActive(!isActive);
   };
-  // search btn width extend
-  // const [extend, setExtend] = useState(false);
-  // const handleChange = () => {
-  //   setExtend(!extend);
-  // };
+
+  const [scroller, setScroller] = useState(false);
+
+  const scrollable = () => {
+    if (window.scrollY >= 66) {
+      setScroller(true);
+    } else {
+      setScroller(false);
+    }
+  };
+
+  window.addEventListener("scroll", scrollable);
+
+  //search btn width extend
+  //  const [extend, setExtend] = useState(false);
+  //    const handleChange = () => {
+  //     setExtend(!extend);
+  //   };
+
   return (
     <>
-      <nav className="bg-slate-400 font-sans w-full h-14 py-4 fixed z-50 flex justify-between">
+      <nav
+        className={` ${
+          scroller ? " bg-white backdrop-blur-md opacity-70" : "bg-[#F8F9FB]"
+        }  font-sans w-full h-14 py-4 fixed
+       z-50 flex   lg:pb-14 `}
+      >
         {/* main items  on the nav */}
-        <div className="container mx-auto justify-between flex  px-8">
+        <div className="container mx-auto justify-between flex  lg:px-16 px-5 ">
           <div>
             <span className="font-bold text-black text-2xl">Besnik.</span>
           </div>
           <ul
-            className={` flex lg:flex-row flex-col  lg:space-x-10 space-x-0 lg:text-xl text-3xl  lg:relative text-white
+            className={` flex lg:flex-row flex-col  lg:space-x-10 
+             space-x-0 lg:text-xl text-3xl  lg:relative text-gray-400
             absolute lg:top-0 top-[56px] z-20 lg:z-0 
           lg:bg-transparent bg-black  w-full lg:h-0 h-screen
         lg:space-y-0 space-y-3 left-0 translate-x-[100%]  ${
@@ -44,17 +64,16 @@ const Nav = () => {
           </ul>{" "}
           <label htmlFor="search" className="hidden lg:block">
             {/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmm search button mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/}
-            <span className="absolute">
+            <span className="absolute text-red-500 ml-4 mt-2 text-xl">
               {" "}
-              {/* <ion-icon name="search"></ion-icon> */}
-              <input type="checkbox" name="" id="" className="ml-4 mt-2" />
+              <ion-icon name="search"></ion-icon>
             </span>{" "}
             <input
               type="search"
               name="search"
               placeholder="Search"
               className={`bg-[#FEF3F1]  placeholder:text-red-500 rounded-full
-                h-8  pl-10 focus:outline-none 
+                h-10  pl-12 focus:outline-none 
               focus:shadow-inner focus:w-[30vw] w-28 focus:rounded-md transition-transform `}
             />
           </label>
