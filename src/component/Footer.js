@@ -13,10 +13,10 @@ const Footer = () => {
     <>
       <footer className="bg-[#fafbfc] ">
         <div className=" lg:px-16 px-5 container mx-auto pt-16">
-          <div className="grid lg:grid-cols-4 gap-20">
+          <div className="grid lg:grid-cols-4 md:gap-20 gap-6">
             <div className="col-span-2">
               <h6 className="text-3xl mb-6 font-semibold">Besnik</h6>
-              <p className="lg:block hidden">
+              <p className="lg:block hidden ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Volup{" "}
                 <br />
                 tatum eaque veritatis consequuntur eum quo sequi quam.
@@ -70,7 +70,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm  third grid mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/}
-            <div className="col-span-1">
+            <div className="col-span-1 ">
               <h6 className="text-3xl font-semibold">Contact Us</h6>
               <ul className="mt-8 space-y-4">
                 <li className="text-xl text-zinc-400">

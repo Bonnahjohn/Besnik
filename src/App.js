@@ -10,6 +10,9 @@ import eat from "./Assets/eat.jpg";
 import menu1 from "./Assets/menu1.jpg";
 import menu2 from "./Assets/menu2.jpg";
 import menu3 from "./Assets/menu3.jpg";
+import customer1 from "./Assets/customer1.jpg";
+import customer2 from "./Assets/customer2.jpg";
+import customer3 from "./Assets/customer3.jpg";
 function App() {
   return (
     <>
@@ -343,6 +346,120 @@ function App() {
                   <ion-icon name="arrow-forward-outline"></ion-icon>
                 </span>
               </button>
+            </div>
+          </div>
+          {/* customers card */}
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 mt-24">
+            <div className=" shadow-xl  px-8 rounded-2xl">
+              <div className="mt-8 text-xl  space-x-2 mb-6 ">
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+              </div>
+              <p className="whitespace-normal text-base leading-6 text-stone-500 mb-6">
+                on the other hand,we denounce with righteous indignation and
+                dislike men <br /> who are so beguiled and demoralized <br /> by
+                the charms of pleasure
+              </p>{" "}
+              <div className="flex space-x-6 mb-12 mt-12">
+                {" "}
+                <img
+                  src={customer1}
+                  alt="customer1"
+                  className="w-12 h-12 rounded-full hover:ring-teal-500 hover:ring"
+                />{" "}
+                <div>
+                  {" "}
+                  <h6 className="text-xl font-semibold">Serhiy Hipsky</h6>
+                  <p className="text-lg font-semibold">CEO Universal</p>
+                </div>
+              </div>
+            </div>
+            <div className=" shadow-xl  px-8 rounded-2xl">
+              <div className="mt-8 text-xl  space-x-2 mb-6 ">
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+              </div>
+              <p className="whitespace-normal text-base leading-6 text-stone-500 mb-6">
+                Lorem ipsum dolor sit amet consecter, adipisicing elit. Qui,
+                nam! Aliquid fugit animi id, quis ea provident nulla orum
+                delectus Aliquid .
+              </p>{" "}
+              <div className="flex space-x-6 mb-12 mt-12">
+                {" "}
+                <img
+                  src={customer2}
+                  alt="customer2"
+                  className="w-12 h-12 rounded-full hover:ring-teal-500 hover:ring"
+                />{" "}
+                <div>
+                  {" "}
+                  <h6 className="text-xl font-semibold">Justus Menke</h6>
+                  <p className="text-lg font-semibold">CEO Eronaman</p>
+                </div>
+              </div>
+            </div>
+            <div className=" shadow-xl  px-8 rounded-2xl">
+              <div className="mt-8 text-xl  space-x-2 mb-6 ">
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+                <span className="text-orange-500">
+                  <ion-icon name="star"></ion-icon>
+                </span>
+              </div>
+              <p className="whitespace-normal text-base leading-6 text-stone-500 mb-6">
+                on the other hand,we denounce with righteous indignation and
+                dislike <br /> whoareso beguiledan ddemoralized <br /> by the
+                charms pleasure Lorem, ipsum.
+              </p>{" "}
+              <div className="flex space-x-6 mb-12 mt-12">
+                {" "}
+                <img
+                  src={customer3}
+                  alt="customer3"
+                  className="w-12 h-12 rounded-full hover:ring-teal-500 hover:ring"
+                />{" "}
+                <div>
+                  {" "}
+                  <h6 className="text-xl font-semibold">Britain Eriksen</h6>
+                  <p className="text-lg font-semibold">CEO Universal</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

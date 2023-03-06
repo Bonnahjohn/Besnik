@@ -37,9 +37,7 @@ const Nav = () => {
     <>
       <nav
         className={` ${
-          scroller
-            ? " bg-[rgba(0,0,0,0.5)] backdrop-blur-2xl opacity-70 delay-[1ms] "
-            : "bg-[#F8F9FB] delay-[1ms]"
+          scroller ? " bg-red-400 delay-[1ms] " : "bg-[#F8F9FB] delay-[1ms]"
         }  font-sans w-full h-14 py-4 fixed
        z-50 flex   lg:pb-14 `}
       >
