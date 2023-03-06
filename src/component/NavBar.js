@@ -10,6 +10,7 @@ const Nav = () => {
   ];
   // burger  toggling
   const [isActive, setIsActive] = useState(false);
+
   const handleToggler = () => {
     setIsActive(!isActive);
   };
@@ -57,12 +58,12 @@ const Nav = () => {
             className={` flex lg:flex-row flex-col  lg:space-x-10 
              space-x-0 lg:text-xl text-3xl  lg:relative text-gray-400
             absolute lg:top-0 top-[56px] z-20 lg:z-0 
-          lg:bg-transparent bg-black  w-full lg:h-0 h-screen
-        lg:space-y-0 space-y-3 left-0 translate-x-[100%]  ${
+         bg-black  w-full lg:h-0 h-screen
+        lg:space-y-0 space-y-3 left-0   ${
           isActive
             ? "translate-x-0 delay-[1ms]"
             : " translate-x-[100%] delay-[1ms] "
-        } lg:translate-x-0  justify-center text-center ${
+        } lg:translate-x-0  justify-center text-center  ${
               scroller ? "text-white" : "text-gray-400"
             }`}
           >
@@ -88,7 +89,10 @@ const Nav = () => {
             />
           </label>
           {/*mmmmmmmmmmmmmmmmmmmmmmmmmm burger mmmmmmmmmmmmmmmmm */}
-          <div className="text-4xl py-1 lg:hidden" onClick={handleToggler}>
+          <div
+            className="text-4xl py-1 lg:hidden text-green-400"
+            onClick={handleToggler}
+          >
             <ion-icon name={isActive ? "close" : "menu"}></ion-icon>
           </div>
         </div>

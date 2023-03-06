@@ -1,18 +1,22 @@
 import Nav from "./component/NavBar";
-import Button from "./component/Button";
+import Footer from "./component/Footer";
+import hero from "./Assets/hero.jpg";
 import onhero from "./Assets/onhero.jpg";
 import recipe1 from "./Assets/recipe1.jpg";
 import recipe2 from "./Assets/recipe2.jpg";
 import recipe3 from "./Assets/recipe3.jpg";
 import recipe4 from "./Assets/recipe4.jpg";
 import eat from "./Assets/eat.jpg";
+import menu1 from "./Assets/menu1.jpg";
+import menu2 from "./Assets/menu2.jpg";
+import menu3 from "./Assets/menu3.jpg";
 function App() {
   return (
     <>
       <Nav />
       <main className="container mx-auto lg:px-16 px-5 font-[Times New Roman] lg:pt-32 pt-12 ">
         {/*mmmmmmmmmmmmmmmmmmmmmmmmmmmm   hero setion mmmmmmmmmmmmmmmmmmm*/}
-        <section className="grid grid-cols-1 gap-4 lg:grid-cols-2 ">
+        <section className="grid grid-cols-1 gap-20 lg:grid-cols-2 ">
           <div className=" mt-16">
             <h1 className="lg:text-[55px] text-3xl whitespace-pre-line font-medium leading-snug ">
               Choose your best <br /> quality food
@@ -41,12 +45,28 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="bg-red-200 ">
-            1 <img src={onhero} alt="" />
+          <div className=" relative">
+            <img
+              src={recipe2}
+              alt=""
+              className="absolute w-24 h-24  shadow-lg ring ring-white rounded-full left-[90%] top-2 md:block hidden"
+            />
+            {/* mmmmmmmmmmmmm  main image of the hero mmmmmmmmmmmmmmmmmmm */}
+            <img
+              src={hero}
+              alt="heroimage"
+              className="w-screen h-[80vh]  rounded-bl-[70%] rounded-tr-[10%] rounded-br-[15%] rounded-tl-[20%]"
+            />
+            {/* img on image button */}
+            <img
+              src={onhero}
+              alt=""
+              className="absolute w-60 h-60 rounded-full left-0 top-2/3 ring ring-white shadow-sm"
+            />
           </div>
         </section>
         {/*mmmmmmmmmmmmmmmmmmmmmmmmmmm our food menu mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/}
-        <section className=" pt-20">
+        <section className=" mt-40">
           <h2 className="text-center md:text-5xl text-3xl mb-8">
             Our food menu
           </h2>
@@ -61,14 +81,93 @@ function App() {
             est, porro in vitae unde quo impedit repellendus, maiores, tenetur
             aliquid velit perspiciatis.
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
-            <div className="bg-red-400 ">1</div>
-            <div className="bg-red-600">2</div>{" "}
-            <div className="bg-red-800 ">3</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+            <div className="rounded-3xl shadow-xl hover:shadow-2xl delay-200 cursor-pointer">
+              <img
+                src={menu1}
+                alt="menu1"
+                className="w-52 h-52  rounded-full  mx-auto mt-8 mb-6"
+              />
+              <h3 className="text-center text-3xl mb-4">
+                Mutton biryani recipe
+              </h3>
+              <p className="text-center text-xl text-gray-300">
+                The popular biryani
+              </p>
+              <div className="flex justify-between px-10 mt-10 mb-10">
+                <div className="text-xl"> $8.00</div>
+                <div>
+                  {" "}
+                  <button
+                    type="button"
+                    className="bg-[#FD8E75] px-10 rounded-full py-2 text-white"
+                  >
+                    ORDER NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="rounded-3xl shadow-xl hover:shadow-2xl delay-200 cursor-pointer">
+              <img
+                src={menu2}
+                alt="menu2"
+                className="w-52 h-52  rounded-full  mx-auto mt-8 mb-6"
+              />{" "}
+              <h3 className="text-center text-3xl mb-4">
+                Chicken roast recipe
+              </h3>
+              <p className="text-center text-xl text-gray-300">
+                The best chicken recipe
+              </p>
+              <div className="flex justify-between px-10 mt-10 mb-10">
+                <div className="text-xl"> $6.30</div>
+                <div>
+                  {" "}
+                  <button
+                    type="button"
+                    className="bg-[#FD8E75] px-10 rounded-full py-2 text-white"
+                  >
+                    ORDER NOW
+                  </button>
+                </div>
+              </div>
+            </div>{" "}
+            <div className="rounded-3xl shadow-xl hover:shadow-2xl delay-200 cursor-pointer">
+              <img
+                src={menu3}
+                alt="menu3"
+                className="w-52 h-52  rounded-full  mx-auto mt-8 mb-6"
+              />{" "}
+              <h3 className="text-center text-3xl mb-4">
+                Barbecue Chicken Fried
+              </h3>
+              <p className="text-center text-xl text-gray-300">
+                The most popular chicken roast
+              </p>
+              <div className="flex justify-between px-10 mt-10 mb-10">
+                <div className="text-xl"> $4.75</div>
+                <div>
+                  {" "}
+                  <button
+                    type="button"
+                    className="bg-[#FD8E75] px-10 rounded-full py-2 text-white"
+                  >
+                    ORDER NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-14 space-x-3">
+            <span className="bg-red-500  cursor-pointer hover:px-3  rounded-full px-2"></span>
+            <span className="bg-red-500  cursor-pointer hover:px-3  rounded-full px-2"></span>
+            <span className="bg-red-500  cursor-pointer hover:px-3  rounded-full px-2"></span>
+            <span className="bg-red-500  cursor-pointer hover:px-3  rounded-full px-2"></span>
+            <span className="bg-red-500  cursor-pointer hover:px-3  rounded-full px-2"></span>
           </div>
         </section>
         {/*mmmmmmmmmmmmmmmmmmmmmmmmmmmm   always the best setion mmmmmmmmmmmmmmmmmmm*/}
-        <section className="grid lg:grid-cols-2 grid-cols-1 gap-20 pt-20">
+        <section className="grid lg:grid-cols-2 grid-cols-1 gap-20 mt-40">
           <div className=" lg:order-1 order-2">
             <img src={eat} alt="" className="w-full h-[80vh] rounded-3xl" />
           </div>
@@ -96,13 +195,11 @@ function App() {
             >
               ORDER NOW
             </button>
-            <div className="flex justify-between mt-20">
-              <Button />
-            </div>
+            <div className="flex justify-between mt-20"></div>
           </div>
         </section>
         {/*mmmmmmmmmmmmmmmmmmmmmmmmmmmm   Our special recipies setion mmmmmmmmmmmmmmmmmmm*/}
-        <section className="pt-20">
+        <section className="mt-40">
           <h5 className="text-center md:text-5xl text-3xl font-semibold mb-6">
             Our special recipies
           </h5>
@@ -117,14 +214,14 @@ function App() {
             pleasure and praising pain was born and I will give you a complete
             account of the system
           </p>
-          <div className="grid md:grid-cols-2 gap-x-16 lg:gap-y-20  grid-cols-1 mt-16">
+          <div className="grid md:grid-cols-2 lg:gap-x-16 lg:gap-y-20 gap-16 lg:gap-0 grid-cols-1 mt-16">
             <div className="lg:order-1 order-3 shadow-xl w-[95%] rounded-b-3xl">
               <img
                 src={recipe1}
                 alt="recipies food"
                 className="rounded-3xl w-[100%]  h-[80%] "
               />
-              <div className="flex justify-between px-8 mt-8 mb-6 ">
+              <div className="flex justify-between md:px-8 px-2 mt-8 md:mb-6 mb-10 ">
                 <h5 className="font-semibold text-lg">
                   Canadian chicken roast
                 </h5>
@@ -137,7 +234,7 @@ function App() {
                 alt="recipies food"
                 className="rounded-3xl w-[100%] h-[80%]"
               />
-              <div className="flex justify-between px-8 mt-8 mb-6 ">
+              <div className="flex justify-between md:px-8 px-2 mt-8 md:mb-6 mb-10  ">
                 <h5 className="font-semibold text-lg">New York style roast</h5>
                 <p className="text-xl text-orange-500">$8.99</p>
               </div>
@@ -148,7 +245,7 @@ function App() {
                 alt="recipies food"
                 className="rounded-3xl w-[100%] h-[80%]"
               />
-              <div className="flex justify-between px-8 mt-8 mb-6 ">
+              <div className="flex justify-between md:px-8 px-2 mt-8 md:mb-6 mb-10  ">
                 <h5 className="font-semibold text-lg">Iranian special food</h5>
                 <p className="text-xl text-orange-500">$7.00</p>
               </div>
@@ -159,7 +256,7 @@ function App() {
                 alt="recipies food"
                 className="rounded-3xl w-[100%] h-[80%]"
               />
-              <div className="flex justify-between px-8 mt-8 mb-6 ">
+              <div className="flex justify-between md:px-8 px-2 mt-8 md:mb-6 mb-10  ">
                 <h5 className="font-semibold text-lg">
                   Special Lunch in United State
                 </h5>
@@ -168,7 +265,8 @@ function App() {
             </div>
           </div>
         </section>
-      </main>
+      </main>{" "}
+      <Footer />
     </>
   );
 }
