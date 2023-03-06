@@ -1,7 +1,20 @@
-const Button = () => {
+const Button = (props) => {
   return (
     <>
-      <h1>hello</h1>
+      <div className="flex justify-evenly ">
+        <button
+          type="button"
+          className="bg-transparent  text-red-500 ring-1 py-2 px-2 rounded-full ring-red-500 mr-4"
+        >
+          {props.children}
+        </button>
+        <button
+          type="button"
+          className="bg-transparent  text-red-500 ring-1 py-2 px-2 rounded-full ring-red-500"
+        >
+          {props.children}
+        </button>
+      </div>
     </>
   );
 };

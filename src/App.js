@@ -5,6 +5,7 @@ import recipe1 from "./Assets/recipe1.jpg";
 import recipe2 from "./Assets/recipe2.jpg";
 import recipe3 from "./Assets/recipe3.jpg";
 import recipe4 from "./Assets/recipe4.jpg";
+import eat from "./Assets/eat.jpg";
 function App() {
   return (
     <>
@@ -46,11 +47,19 @@ function App() {
         </section>
         {/*mmmmmmmmmmmmmmmmmmmmmmmmmmm our food menu mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/}
         <section className=" pt-20">
-          <h2 className="text-center text-5xl mb-8">Our food menu</h2>
-          <p className="text-center whitespace-pre ">
+          <h2 className="text-center md:text-5xl text-3xl mb-8">
+            Our food menu
+          </h2>
+          <p className="text-center whitespace-pre md:block hidden ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             est, porro in <br /> vitae unde quo impedit repellendus, maiores,
             tenetur aliquid velit perspiciatis.
+          </p>
+          {/*mmmmmmmmmmmmmmmmmmmmmmmmm show text on on small screen mmmmmmmmmmmmm*/}
+          <p className="   block md:hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            est, porro in vitae unde quo impedit repellendus, maiores, tenetur
+            aliquid velit perspiciatis.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
             <div className="bg-red-400 ">1</div>
@@ -59,26 +68,61 @@ function App() {
           </div>
         </section>
         {/*mmmmmmmmmmmmmmmmmmmmmmmmmmmm   always the best setion mmmmmmmmmmmmmmmmmmm*/}
-        <section className="grid lg:grid-cols-2 grid-cols-1 gap-4 pt-20">
-          <div className="bg-red-200 lg:order-1 order-2">1</div>
-          <div className="bg-red-200 mt-16 lg:order-2 order-1">2</div>
+        <section className="grid lg:grid-cols-2 grid-cols-1 gap-20 pt-20">
+          <div className=" lg:order-1 order-2">
+            <img src={eat} alt="" className="w-full h-[80vh] rounded-3xl" />
+          </div>
+          <div className=" mt-16 lg:order-2 order-1">
+            <h4 className="md:text-4xl text-3xl font-semibold mb-10">
+              People who like to eat are <br />
+              always the best People
+            </h4>
+            <p className="lg:text-left text-center lg:block hidden">
+              {" "}
+              But I must explain to you how all this mistaken idea of <br />{" "}
+              denouncing pleasure and praising pain was born and I will <br />{" "}
+              give you a complete account of the system
+            </p>
+            {/*mmmmmmmmmmmmmmmmmmmmmmmmm show text on on small screen mmmmmmmmmmmmm*/}
+            <p className="lg:text-left text-center lg:hidden block">
+              {" "}
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system
+            </p>
+            <button
+              type="button"
+              className="bg-[#FD8E75] mt-20 px-10 rounded-full py-3 text-white"
+            >
+              ORDER NOW
+            </button>
+            <div className="flex justify-between mt-20">
+              <Button />
+            </div>
+          </div>
         </section>
         {/*mmmmmmmmmmmmmmmmmmmmmmmmmmmm   Our special recipies setion mmmmmmmmmmmmmmmmmmm*/}
         <section className="pt-20">
-          <h5 className="text-center text-5xl font-semibold mb-6">
+          <h5 className="text-center md:text-5xl text-3xl font-semibold mb-6">
             Our special recipies
           </h5>
-          <p className="text-center text-base whitespace-normal">
+          <p className="text-center text-base lg:block hidden">
             But I must explain to you how all this mistaken idea of denouncing
             pleasure and <br /> praising pain was born and I will give you a
             complete account of the system
           </p>
-          <div className="grid lg:grid-cols-2 gap-16 grid-cols-1 mt-16">
+          {/*mmmmmmmmmmmmmmmmmmmmmmmmm show text on on small screen mmmmmmmmmmmmm*/}
+          <p className="text-center text-base lg:hidden block">
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system
+          </p>
+          <div className="grid md:grid-cols-2 gap-x-16 lg:gap-y-20  grid-cols-1 mt-16">
             <div className="lg:order-1 order-3 shadow-xl w-[95%] rounded-b-3xl">
               <img
                 src={recipe1}
                 alt="recipies food"
-                className="rounded-3xl w-[100%] h-[80%]"
+                className="rounded-3xl w-[100%]  h-[80%] "
               />
               <div className="flex justify-between px-8 mt-8 mb-6 ">
                 <h5 className="font-semibold text-lg">
@@ -124,7 +168,6 @@ function App() {
             </div>
           </div>
         </section>
-        <Button />
       </main>
     </>
   );
