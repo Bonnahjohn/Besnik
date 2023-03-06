@@ -68,7 +68,7 @@ function App() {
             <img
               src={hero}
               alt="heroimage"
-              className="w-screen h-[80vh]  rounded-bl-[70%] rounded-tr-[10%] rounded-br-[15%] rounded-tl-[20%]"
+              className="w-screen h-[110%]  rounded-bl-[70%] rounded-tr-[10%] rounded-br-[15%] rounded-tl-[20%]"
             />
             {/* img on image button */}
             <img
@@ -79,7 +79,7 @@ function App() {
           </div>
         </section>
         {/*mmmmmmmmmmmmmmmmmmmmmmmmmmm our food menu mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/}
-        <section className=" mt-40">
+        <section className=" mt-48">
           <h2 className="text-center md:text-5xl text-3xl mb-8">
             Our food menu
           </h2>
@@ -185,7 +185,7 @@ function App() {
             <img
               src={eat}
               alt=""
-              className="w-full h-[80vh] rounded-[1.5rem]"
+              className="w-full h-[110%] rounded-[1.5rem]"
             />
           </div>
           <div className=" mt-16 lg:order-2 order-1">

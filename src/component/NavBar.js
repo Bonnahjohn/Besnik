@@ -26,13 +26,16 @@ const Nav = () => {
   };
 
   window.addEventListener("scroll", scrollable);
-
+  //const gater = ["u"];
   //search btn width extend
-  //  const [extend, setExtend] = useState(false);
-  //    const handleChange = () => {
-  //     setExtend(!extend);
-  //   };
+  // const [extend, setExtend] = useState(false);
+  // const handleChange = (e) => {
+  //  setExtend(e)
+  // };
 
+  // const find = !gater
+  //   ? gater
+  //   : gater.filter((gf) => gf.toLowerCase().includes(gater.toLowerCase()));
   return (
     <>
       <nav
